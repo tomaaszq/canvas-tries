@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<script>
+	window.onload = function() {
+		var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+
+		var x = canvas.width / 2;
+		var y = canvas.height / 2;
+		var radius = 75;
+		var startingAngle = 1.1 * Math.PI;
+		var endingAngle = 0 * Math.PI;
+		var obrot = false;
+
+		ctx.arc(x, y, radius, startingAngle, endingAngle, obrot);
+		ctx.lineWidth = 10;
+		ctx.strokeStyle = "blue";
+		ctx.stroke();
+	};
+	</script>
+
+</head>
+
+<body>
+	<canvas id="canvas" width="400" height="250">
+		<!-- alternatywna treść -->
+		<p>Niestety Twoja przeglądarka nie wspiera tej funkcji HTML5</p>
+
+	</canvas>
+
+
+</body>
+
+
+
+</html>
